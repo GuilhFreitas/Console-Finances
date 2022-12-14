@@ -88,3 +88,10 @@ let finances = [
 ];
 
 let totalMonths = finances.length;
+
+let netProfitLoss = 0;
+
+for (let i = 0; i < finances.length; i++) {
+    const month = finances[i];
+    netProfitLoss += month[1];
+};
