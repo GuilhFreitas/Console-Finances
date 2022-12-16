@@ -26,7 +26,10 @@ N/A
 ## Usage
 
 Follow this link to the deployed page:
-, open the console with Ctrl + Shift + J or by right click > Inspect > Console tab and the financial analysis will be displayed in the console.
+
+https://guilhfreitas.github.io/Console-Finances/
+
+Open the console with Ctrl + Shift + J or by right click > Inspect > Console tab and the financial analysis will be displayed in the console.
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments

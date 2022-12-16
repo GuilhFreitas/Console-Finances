@@ -99,7 +99,7 @@ for (let i = 0; i < finances.length; i++) {
 // console.log(netProfitLoss)
 
 let totalChange = 0;
-let greatestIncrease = ["", 0];
+let greatestIncrease = ["", 9999999999];
 let greatestDecrease = ["", 0];
 
 for (let i = 0; i < finances.length - 1; i++) {
