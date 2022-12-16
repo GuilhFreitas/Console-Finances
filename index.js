@@ -88,6 +88,7 @@ let finances = [
 ];
 
 let totalMonths = finances.length;
+// console.log(totalMonths)
 
 let netProfitLoss = 0;
 
@@ -95,3 +96,39 @@ for (let i = 0; i < finances.length; i++) {
     const month = finances[i];
     netProfitLoss += month[1];
 };
+// console.log(netProfitLoss)
+
+let totalChange = 0;
+let greatestIncrease = ["", 0];
+let greatestDecrease = ["", 0];
+
+for (let i = 0; i < finances.length - 1; i++) {
+    
+    let month1 = finances[i];
+    let first = month1[1];
+    // console.log(`First: ${first}`)
+
+    let month2 = finances[1 + i];
+    let second = month2[1];
+    // console.log(`Second: ${second}`)
+
+    let change = second - first
+    // console.log(`Change: ${change}`)
+
+    if(change > greatestIncrease[1]){
+        greatestIncrease = [month2[0], change]
+    };
+    if(change < greatestDecrease[1]){
+        greatestDecrease = [month2[0], change]
+    };
+
+    totalChange += change
+    // console.log(`Total Change so far: ${totalChange}`)
+};
+
+// console.log(`Greatest Increase: ${greatestIncrease}`)
+// console.log(`Greatest Decrease: ${greatestDecrease}`)
+
+let averageChange = totalChange / (finances.length-1)
+
+// console.log(`Average Change: ${averageChange}`)
