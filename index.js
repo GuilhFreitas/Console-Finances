@@ -132,3 +132,13 @@ for (let i = 0; i < finances.length - 1; i++) {
 let averageChange = totalChange / (finances.length-1)
 
 // console.log(`Average Change: ${averageChange}`)
+
+console.log(
+    `Financial Analysis
+-----------------------------
+Total Months: ${totalMonths}
+Total: $${netProfitLoss}
+Average Change: $${averageChange.toFixed(2)}
+Greatest Increase in Profits: ${greatestIncrease[0]} ($${greatestIncrease[1]})
+Greatest Decrease in Profits: ${greatestDecrease[0]} ($${greatestDecrease[1]})`
+)
